@@ -20,7 +20,9 @@
                      :poshandler aw-posframe-position-handler
                      :font (face-font 'aw-leading-char-face)
                      :foreground-color (face-foreground 'aw-leading-char-face)
-                     :background-color (face-background 'aw-leading-char-face)))))
+                     :background-color (face-background 'aw-leading-char-face)
+                     :internal-border-width 1
+                     :internal-border-color "gray"))))
 
 (defun aw--remove-leading-chars-posframe ()
   ;; Hide rather than delete. See aw--lead-overlay-posframe for why.
